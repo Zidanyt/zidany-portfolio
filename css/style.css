@@ -1,170 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    /* Adicione um efeito de rolagem suave ao documento */
-    font-family: 'Poppins', sans-serif;
 }
 
-:root {
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
-}
-
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x */
-}
 body {
-    background: var(--bg-color);
-    color: var(--text-color);
+    width: 80%;
+    margin: 0 auto;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: transparent;
+/* Header > nav */
+
+#navbar {
+    margin: 2rem 0;
     display: flex;
     justify-content: space-between;
-    z-index: 100;
 }
 
-.Header__logo {
-    font-size: 2.5rem;
-    color: var(--text-color);
-    font-weight: 600;
+#navbar__titulo {
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    color: rgb(0, 0, 46);
+
 }
 
-.navbar a {
-    font-size: 1.7rem;
-    color: var(--text-color);
-    font-weight: 500;
-    margin-left: 3.5rem;
+#navbar__navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-/* Ativando o primeiro elemento */
-
-.navbar a:hover,
-.navbar a.active {
-    color: var(--main-color);
+.navegacao__li {
+    margin: 0 1rem;
+    list-style: none;
+    font-size: 1.2rem;
 }
 
-#menu__icon {
-    font-size: 3.6rem;
-    color: var(--text-color);
+.navegacao__a {
+    text-decoration: none;
+    color:  rgb(41, 41, 41);
+}
+
+.navegacao__a:hover {
+    color:  rgba(41, 41, 41, 0.459);
+}
+
+/* Header > apresentacao */
+
+#apresentacao {
+    display: flex;
+    justify-content: space-between;
+}
+
+#apresentacao__container_conteudo {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#apresentacao__titulo {
+    text-transform: uppercase;
+    line-height: 4.6rem;
+    font-size: 3.5rem;
+    color: rgb(0, 0, 46);
+}
+
+#apresentacao__paragrafo {
+    line-height: 2rem;
+    padding: 1rem 0;
+}
+
+.button {
+    width: 6rem;
+    background-color: rgb(41, 41, 41);
+    padding: .6rem;
+    border-radius: 8px;
+    color: white;
     cursor: pointer;
-    display: none;
 }
 
-section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-}
-
-.home {
-    display: flex;
-    align-items: center;
-    padding: 0 9%;
-}
-
-.home__content {
-    max-width: 60rem;
-}
-
-.home__content h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
-}
-
-.home__content .text__animate {
+#opa {
     position: relative;
-    width: 32.8rem;
 }
 
-.home__content .text__animate h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-box-reflect */
+#apresentacao__img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    z-index: 9999;
 }
 
-.home__content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 4rem;
-}
-
-.btn__box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 34.5rem;
-    height: 5rem;
-}
-
-.btn__box .btn:hover {
-    color: var(--main-color);
-}
-
-.btn__box .btn {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 15rem;
-    height: 100%;
-    background: var(--main-color);
-    border: .2rem solid var(--main-color);
-    border-radius: .8rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    color: var(--bg-color);
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.btn__box .btn:nth-child(2){
-    background: transparent;
-    color: var(--main-color);
-}
-
-.btn__box .btn:nth-child(2):hover {
-    color: var(--bg-color);
-}
-
-.btn__box .btn:nth-child(2)::before {
-    background: var(--main-color);
-
-}
-
-.btn__box .btn::before {
-    content: '';
+#apresentacao__img_auxiliar {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--bg-color);
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn__box .btn:hover::before {
-    width: 100%;
+    left: 10px;
+    bottom: 320px;
+    z-index: -111;
 }
