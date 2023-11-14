@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Zidany</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav id="navbar">
+    <nav id="navbar">
+        <div id="navbar__content">
             <div id="navbar__titulo">
                 <h1>Zidany</h1>
             </div>
             <ul id="navbar__navegacao">
-                <li class="navegacao__li"><a class="navegacao__a" href="">Início</a></li>
-                <li class="navegacao__li"><a class="navegacao__a" href="">Sobre</a></li>
+                <li class="navegacao__li"><a class="navegacao__a" href="#inicio">Início</a></li>
+                <li class="navegacao__li"><a class="navegacao__a" href="#sobre">Sobre</a></li>
                 <li class="navegacao__li"><a class="navegacao__a" href="">Habilidades</a></li>
                 <li class="navegacao__li"><a class="navegacao__a" href="">Projetos</a></li>
                 <li class="navegacao__li"><a class="navegacao__a" href="">Contato</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+    <header id="inicio">
         <section id="apresentacao">
             <div id="apresentacao__container_conteudo">
                 <h3 id="apresentacao__titulo">Óla! Sou Zidany Desenvolvedor Front-end</h3>
@@ -29,15 +32,34 @@
                     poblemas reais e que agregam valor aos usuários.
                 </p>
                 <button type="submit" class="button">Saiba Mais!</button>
-            </div>
-            <div id="opa">
+            </div>  
+            <div id="container__apresentacao_img">
                 <img id="apresentacao__img" src="https://i.pinimg.com/736x/bd/c7/59/bdc7599b521e6a1d2c2e24843b499e96.jpg" alt="">
                 <img id="apresentacao__img_auxiliar" src="assets/fundo.svg" alt="">
             </div>
         </section>
     </header>
     <main>
-        
+        <section id="container__sobre">
+            <div id="sobre" class="container__sobre_icone">
+                <h2 id="container__sobre_titulo">Além do código: Quem sou eu?</h2>
+                <p id="container__sobre_paragrafo">Que tal se conectar com migo nas redes sociais abaixo e saber mais sobre min</p>
+                <div id="container__icones">
+                    <a class="sobre__icones" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="sobre__icones" href="#"><i class="fa-brands fa-github"></i></a>
+                    <a class="sobre__icones" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div id="sobre__inf">
+                <h3 id="sobre__inf_titulo">Desenvolvedor Front-end apaixonado por tecnologia e soluções criativas</h3>
+                <p id="sobre__inf_paragrafo">
+                    Óla sou Zidany Teixeira, um Desenvolvedor Front-end apaixonado por tecnologia.Meu objetivo é criar interfaces intuitivas e responsivas que não apenas atendam, mas excedam as expectativas dos usuários.
+                </p>
+            </div>
+        </section>
+        <section>
+
+        </section>
     </main>
     <footer>
 
