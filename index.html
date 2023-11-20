@@ -18,12 +18,12 @@
                 <li class="navegacao__li"><a class="navegacao__a" href="#inicio">Início</a></li>
                 <li class="navegacao__li"><a class="navegacao__a" href="#sobre">Sobre</a></li>
                 <li class="navegacao__li"><a class="navegacao__a" href="#habilidades">Habilidades</a></li>
-                <li class="navegacao__li"><a class="navegacao__a" href="">Projetos</a></li>
-                <li class="navegacao__li"><a class="navegacao__a" href="">Contato</a></li>
+                <li class="navegacao__li"><a class="navegacao__a" href="#Projetos">Projetos</a></li>
+                <li class="navegacao__li"><a class="navegacao__a" href="#Contato">Contato</a></li>
             </ul>
         </div>
     </nav>
-    <header>
+    <header id="inicio">
         <section class="apresentacao">
             <div class="apresentacao__container_conteudo">
                 <h3 class="apresentacao__titulo">Óla! Sou Zidany Desenvolvedor Front-end</h3>
@@ -31,7 +31,7 @@
                     Desenvolvedor web Front-end em busca do primeiro estagio.Sou apaixonado por criar soluções tecnologicas que resolvem
                     poblemas reais e que agregam valor aos usuários.
                 </p>
-                <a href="#" class="button">Saiba Mais!</a>
+                <a href="" class="button">Saiba Mais!</a>
             </div>  
             <div id="container__apresentacao_img">
                 <img id="apresentacao__img" src="https://i.pinimg.com/736x/bd/c7/59/bdc7599b521e6a1d2c2e24843b499e96.jpg" alt="">
@@ -40,7 +40,7 @@
         </section>
     </header>
     <main>
-        <section class="container__sobre">
+        <section id="sobre" class="container__sobre">
             <div>
                 <h2 class="container__sobre_titulo">Além do código: Quem sou eu?</h2>
                 <p class="container__sobre_paragrafo">Que tal se conectar com migo nas redes sociais abaixo e saber mais sobre min</p>
@@ -57,14 +57,51 @@
                 </p>
             </div>
         </section>
-        <section class="habilidades">
+        <section id="habilidades" class="habilidades">
             <div>
-                
+                <h3 class="habilidades__titulo">Minha caixinha de ferramentas</h3>
+                <p class="habilidades__paragrafo">Ferramentas que domino e que me permitem crira soluções criativas</p>
+            </div>
+            <div class="habilidades__links">
+                <div class="habilidades__links_icone">
+                    <i class="fa-brands fa-html5"></i>
+                    <span class="habilidades__span">html5</span>
+                </div>
+                <div class="habilidades__links_icone">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span class="habilidades__span">css3</span>
+                </div>
+                <div class="habilidades__links_icone">
+                    <i class="fa-brands fa-js"></i>
+                    <span class="habilidades__span">javascript</span>
+                </div>
+                <div class="habilidades__links_icone">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <span class="habilidades__span">bootstrap</span>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-
+    <main id="Projetos" class="projetos">
+        <section class="container__projeto">
+            <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde architecto sit, quibusdam quis libero nesciunt nulla magni assumenda eum repellendus dolorum eveniet deserunt veniam quia quasi est totam, culpa tenetur fuga! Quo neque illo suscipit dolore cumque? Non voluptatum molestiae deserunt a quibusdam atque earum quae, beatae quos commodi nesciunt.
+            </div>
+            <div>
+                <img width="500px" src="assets/teste.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="contato" id="Contato">
+        <h3>Vamos conversar?</h3>
+        <p>ficarei feliz em saber mais sobre seus projetos e como podemos trabalhar juntos para torná-los realidades.</p>
+        <span></span>
+        <span></span>
+        <div class="container__icones">
+            <a class="sobre__icones" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="sobre__icones" href="#"><i class="fa-brands fa-github"></i></a>
+            <a class="sobre__icones" href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>

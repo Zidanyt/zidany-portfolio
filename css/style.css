@@ -21,6 +21,7 @@ body {
     width: 100%;
     z-index: 10;
     background-color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.281);
 }
 
 .navbar__content {
@@ -84,14 +85,20 @@ body {
     color: rgb(0, 0, 46);
 }
 
-.button {
+.button { 
     text-decoration: none;
     width: 7rem;
     background-color: rgb(41, 41, 41);
     padding: .6rem;
     border-radius: 8px;
     color: white;
-    cursor: pointer;
+}
+
+.button:hover { 
+    transition: background-color .5s ease;
+    background-color:rgba(44, 43, 43, 0.356);
+    color: black;
+    cursor: url('../assets/icons8-ponteiro-3d-30.png'), auto;
 }
 
 #container__apresentacao_img {
@@ -117,7 +124,7 @@ body {
 .container__sobre {
     padding-top: 120px;
     display: flex;
-    height: 100vh;
+    height: 90vh;
 }
 
 .container__sobre_titulo {
@@ -143,7 +150,6 @@ body {
 }
 
 .sobre__inf {
-    height: 100%;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
@@ -163,4 +169,73 @@ body {
     color: rgb(0, 0, 46);
     font-weight: 600;
     text-align: justify;
+}
+
+/* habilidades */
+
+.habilidades {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.habilidades__titulo {
+    line-height: 2rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: rgb(0, 0, 46);
+}
+
+.habilidades__paragrafo {
+    padding: 1.5rem 0;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 46);
+    font-weight: 600;
+}
+
+.habilidades__links  {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.281);
+    padding: 1rem;
+    display: flex;
+    height: 60%;
+    align-items: center;
+    gap: 5rem;
+}
+
+.habilidades__links_icone {
+    color: rgb(0, 0, 46);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+.habilidades__links_icone i {
+    color: rgb(0, 0, 46);
+    font-size: 4rem;
+}
+
+.habilidades__span {
+    font-size: 2rem;
+}
+
+/* Projetos */
+
+.container__projeto {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+/* footer */
+
+.contato {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
